@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: verdana;
+    }
+
+    .box {
+        padding: 12px;
+    }
+
+    .container {
+        display: grid;
+        gap: 2px;
+        height: 100vh;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows:
+            0.2fr 7fr 5fr 0.5fr
+    }
+
+    h2 {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    #box-1 {
+        color: white;
+        background-color: hsl(219, 29%, 14%);
+    }
+
+    #box-2,
+    #box-6 {
+        background: hsl(210, 46%, 95%)
+    }
+
+    #box-0 {
+
+        color: white;
+        background-color: hsl(217, 19%, 35%);
+    }
+
+    #box-9 {
+
+        background: rgb(238, 165, 29);
+    }
+
+    #box-7,
+    #box-8,
+    #box-5 {
+
+        font-size: small;
+        background: hsl(0, 0%, 81%);
+    }
+
+    li {
+
+        list-style: none;
+    }
+
+    #box-1 nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    @media(width <=500px) {
+        .container {
+            grid-template-rows:
+                0.2fr 0.8fr 6fr 5fr 5fr 5fr 2fr;
+        }
+    }
+
+    @media(width >1000px) {
+        #box-0 {
+            grid-column: 1/span 4;
+        }
+
+        #box-9 {
+            grid-column: 2/span 3;
+        }
+
+        #box-1 {
+            grid-row: 2/span 4;
+        }
+
+
+
+        #box-2 {
+            grid-column: 2/5;
+
+        }
+
+        #box-6 {
+            grid-area: 2/4/4/5;
+        }
+
+
+
+        #box-7,
+        #box-8,
+        #box-5 {
+            grid-row: 3/5;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <!-- .container>.box#box-${box-$}*8 -->
+    <div class="container">
+
+        <!-- <img src="Images/10.jpg" alt="">  -->
+        <nav class="box" id="box-0">
+            <h1>Lavanya Indapure</h1>
+            +91 9834360909 | Maharashtra,Solapur
+        </nav>
+        <div class="box" id="box-1">
+            <h2>My Coding Profiles</h2>
+            <nav>
+                <a href="https://leetcode.com/_lavi/" target="_blank">LeetCode</a> <br>
+                <a href="https://www.codechef.com/users/lavanya_9252" target="_blank">CodeChef</a> <br>
+                <a href="https://www.hackerrank.com/dlavanyaindapure?hr_r=1" target="_blank">Hackerrank</a> <br>
+            </nav>
+            <br>
+            <nav>
+                <h2>Other Profiles</h2>
+                <li><a href="https://www.linkedin.com/in/lavanya-indapure-89058a215/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/LavanyaIndapure" target="_blank">Github</a></li>
+            </nav>
+        </div>
+        <div class="box" id="box-2">
+            <h2 class="headings">Education</h2>
+            <div id="second">
+
+                <li><b>Walchand Institute of Technology,Solapur 2020-2024</b><br>
+                    Bachelor of Technology (B.Tech)-Computer Science and Enginnering (CSE) <br> CGPA: 9.8</li> <br>
+
+                <li><b>Walchand College of Arts and Science,Solapur 2020</b><br>Higher Secondary School Certificate(HSC)
+                    <br>
+                    Grade : 88.32% <br>
+                    Maths : 100/100 <br>
+                </li><br>
+
+                <li><b>Raj Memorial English School,Solapur 2018</b> <br>Secondary School Certificate(SSC)<br>Grade :
+                    96.60% <br>
+                    Maths : 100/100 <br><br></li>
+            </div>
+        </div>
+
+        <div class="box" id="box-5">
+            <h2>Skills</h2>
+            <hr>
+            <li><b>Programming Skills</b> : Java,Python,C,C++</li>
+            <li><b>Tools/Platforms</b> : VS code,Git,Github</li>
+            <li><b>Databases</b> : SQL,MySQL</li>
+            <li><b>Development</b> : HTML,CSS,JavaScript,ReactJs</li>
+            <li><b>Others</b> : Data Structures</li>
+
+        </div>
+
+        <div class="box" id="box-7">
+            <h2>Experiance</h2>
+            <hr>
+            <h4>Volunteer,Coding Club</h4>
+            <li>Collaborated witha team of fellow volunteers to organise and facilitate coding workshops and events for
+                college students.
+            </li>
+        </div>
+        <div class="box" id="box-8">
+            <h2>Achivements</h2>
+            <hr>
+            <li>Ranked <b>58</b> out of <b>14346</b> participants in December Long Coding contest on codechef.</li>
+            <li>Ranked <b>1033</b> out of <b>16107</b> participants in November Long Coding contest on codechef.</li>
+        </div>
+        <div class="box" id="box-9">Mail Id : <a href="dlavanyaindapure@gmail.com" target="_blank">dlavanyaindapure@gmail.com</a></div>
+    </div>
+
+</body>
+
+</html>
